@@ -31,7 +31,7 @@ p { margin: 0; }
   backdrop-filter: saturate(160%) blur(14px); -webkit-backdrop-filter: saturate(160%) blur(14px); border-bottom: 1px solid var(--line); }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; gap: 12px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 800; font-size: 18px; letter-spacing: -0.02em; }
-.brand img { width: 28px; height: 28px; border-radius: 8px; }
+.brand img { width: 40px; height: 40px; object-fit: contain; }
 .header-right { display: flex; align-items: center; gap: 14px; }
 .crumb { font-size: 14px; color: var(--muted); text-decoration: none; display: none; }
 .crumb:hover { color: var(--ink); }
