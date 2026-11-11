@@ -1,11 +1,85 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Developer Page</title>
-  </head>
-  <body>
-    <h1>My App</h1>
-    <p>Contact: youremail@example.com</p>
-  </body>
+<html lang="ko" data-title-ko="appbee — 앱 소개" data-title-en="appbee — Apps">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>appbee — 앱 소개</title>
+<meta name="description" content="appbee Soft가 만드는 모바일 카메라 앱(iPhone · Android): 조용한 카메라, 해냈샷.">
+<meta name="theme-color" content="#FAFAF8">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/lang.js"></script>
+</head>
+<body class="theme-home">
+<a class="skip" href="#main"><span data-lang="ko">본문으로 건너뛰기</span><span data-lang="en">Skip to content</span></a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="" aria-label="appbee home"><img src="favicon.svg" alt="" width="28" height="28">appbee</a>
+    <div class="header-right">
+      
+      <div class="lang-toggle" role="group" aria-label="Language / 언어">
+        <button type="button" data-set-lang="ko" aria-pressed="true" lang="ko">KO</button>
+        <button type="button" data-set-lang="en" aria-pressed="false" lang="en">EN</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="home-hero">
+    <div class="wrap">
+      <span class="eyebrow">appbee Soft · iPhone · Android</span>
+      <h1><span data-lang="ko">일상을 더 예쁘게 담는,<br>작고 단정한 카메라 앱을 만듭니다.</span><span data-lang="en">Small, thoughtful camera apps<br>for everyday moments.</span></h1>
+      <p><span data-lang="ko">appbee Soft는 작고 단정한 모바일 앱을 만드는 스튜디오예요.</span><span data-lang="en">appbee Soft is an independent studio making small, thoughtful mobile apps.</span></p>
+    </div>
+  </section>
+
+  <section class="wrap" aria-label="Apps">
+    <div class="app-grid">
+<!--
+  ▼ 앱 카드 — 새 앱을 추가하려면 아래 <a class="app-card"> 블록 하나를 복사해서 붙여 넣고
+    1) href 를 새 앱 폴더 경로로 (예: "newapp/")
+    2) style 의 색 변수 5개 (--card-bg 배경, --card-ink 글자, --card-accent 장식 원,
+       --card-chip-bg / --card-chip-ink 상태 칩)
+    3) 아이콘 경로·alt, 앱 이름, 한 줄 소개를 data-lang="ko" / data-lang="en" 두 벌로 바꾸면 됩니다.
+  ▼ To add an app: copy one <a class="app-card"> block, then change href, the 5 colour
+    variables in style, the icon, and the ko/en text.
+-->
+      <a class="app-card" href="silentcamera/" style="--card-bg:#F2F1EC; --card-ink:#18233A; --card-accent:#5E8576; --card-chip-bg:#DCE5E0; --card-chip-ink:#34564A;">
+        <img class="icon" src="assets/img/silentcamera/icon-256.webp" width="76" height="76" alt="" loading="lazy">
+        <div>
+          <h2><span data-lang="ko">조용한 카메라</span><span data-lang="en">Timer Camera</span></h2>
+          <p class="sub"><span data-lang="ko">Silent Camera</span><span data-lang="en">Photo Filter &amp; Timer</span></p>
+        </div>
+        <p class="desc"><span data-lang="ko">셔터 소리 없이 원본 화질로. 필터와 간편 편집까지 담은 카메라.</span><span data-lang="en">Beautiful filters, a hands-free timer and quick editing in one simple camera.</span></p>
+        <div class="meta"><span class="chips"><span class="chip">App Store</span><span class="chip">Google Play</span></span><span class="more"><span data-lang="ko">자세히 보기</span><span data-lang="en">Learn more</span><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+      </a>
+
+      <a class="app-card" href="haenaetshot/" style="--card-bg:#0B0C0E; --card-ink:#F4F5F0; --card-accent:#C8FF00; --card-chip-bg:#C8FF00; --card-chip-ink:#0B0C0E;">
+        <img class="icon" src="assets/img/haenaetshot/icon-256.webp" width="76" height="76" alt="" loading="lazy">
+        <div>
+          <h2><span data-lang="ko">해냈샷</span><span data-lang="en">Stamp Camera</span></h2>
+          <p class="sub"><span data-lang="ko">Stamp Camera: Done &amp; Dated</span><span data-lang="en">Done &amp; Dated</span></p>
+        </div>
+        <p class="desc"><span data-lang="ko">운동·공부·식사 인증샷에 날짜와 기록을 스탬프로 남기는 카메라.</span><span data-lang="en">A proof-shot camera that stamps your workouts, study and meals with the date and details.</span></p>
+        <div class="meta"><span class="chips"><span class="chip">App Store <span data-lang="ko">출시 예정</span><span data-lang="en">soon</span></span><span class="chip soon">Google Play <span data-lang="ko">출시 예정</span><span data-lang="en">soon</span></span></span><span class="more"><span data-lang="ko">자세히 보기</span><span data-lang="en">Learn more</span><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+      </a>
+<!-- ▲ 앱 카드 끝 / end of app cards -->
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 appbee Soft</p>
+    <nav aria-label="Footer">
+      <a href="silentcamera/"><span data-lang="ko">조용한 카메라</span><span data-lang="en">Timer Camera</span></a>
+      <a href="haenaetshot/"><span data-lang="ko">해냈샷</span><span data-lang="en">Stamp Camera</span></a>
+      <a href="silentcamera/privacy/"><span data-lang="ko">개인정보처리방침 (조용한 카메라)</span><span data-lang="en">Privacy (Timer Camera)</span></a>
+      <a href="haenaetshot/privacy/"><span data-lang="ko">개인정보처리방침 (해냈샷)</span><span data-lang="en">Privacy (Stamp Camera)</span></a>
+    </nav>
+  </div>
+</footer>
+</body>
 </html>
